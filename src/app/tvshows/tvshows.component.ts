@@ -14,15 +14,15 @@ export class TvshowsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.MovieService.getMovie().subscribe(data=>
-      {
-        this.movies = data
-        console.log(data);
-      }
-      )      
+    //this.MovieService.getMovie().subscribe(data=>
+      //{
+        //this.movies = data
+        //console.log(data);
+     // }
+      //)      
   }
   ngOnDestroy(): void {
-    this.MovieService.unsubscribe();
+   
   }
 
 }

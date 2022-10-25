@@ -11,5 +11,9 @@ export class MenucardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  mouse()
+  {
+    console.log('mouse');
+  }
 }

@@ -8,7 +8,7 @@ export class ServiceService {
  
 
  private apikey:string ="6bdDzgLqIsku9Jj7QwxCShk07EHe9jBUzGQD70JI";
- private  url: string = "https://api.watchmode.com/v1/title/345534/details/?apiKey="+this.apikey+"&append_to_response=sources";
+ private  url: string = ""//"https://api.watchmode.com/v1/title/345534/details/?apiKey="+this.apikey+"&append_to_response=sources";
 
   constructor(
     private httpClient:HttpClient,
@@ -17,7 +17,7 @@ export class ServiceService {
     getMovie()
     {
      
-      return this.httpClient.get<Movies>(`${this.url}`)
+      //return this.httpClient.get<Movies>(`${this.url}`)
     }
 
 }
