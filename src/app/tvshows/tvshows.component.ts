@@ -9,7 +9,7 @@ import { Movies } from '../Models/Movies.models';
 export class TvshowsComponent implements OnInit {
 
   movies: Movies|any;
-  genres: string[] | any;
+  genres: Movies[] =[];
   constructor(
     private  MovieService: ServiceService
   ) { }
@@ -18,7 +18,7 @@ export class TvshowsComponent implements OnInit {
     this.MovieService.getMovie().subscribe(data=>
       {
         this.movies = data
-        this.genres.push(data.genres)
+        
         console.log("data",data, "generos:",this.genres);
         
      }

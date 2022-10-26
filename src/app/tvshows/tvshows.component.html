@@ -12,11 +12,12 @@ src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrq6cRK12zrAuOlcUjC7a
 </h3>
 
 <h4>Calificacion de usuarios: {{movies?.result.rating}}</h4>
-
+<h3>
+    generos:
 <h3  *ngFor="let genres of movies?.result.genres">
-    Genero {{genres.name}} 
+     {{genres.name}} 
 </h3>
-
+</h3>
 <h5>
     {{movies?.result.description}}
 </h5>
