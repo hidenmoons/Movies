@@ -14,7 +14,7 @@ export class ServiceService {
   };
 
  private apikey:string ="6bdDzgLqIsku9Jj7QwxCShk07EHe9jBUzGQD70JI";
- private  url: string = "https://movies-app1.p.rapidapi.com/api/movie/61e8a4c3f2eb8ced20633f4a";
+ private  url: string = "https://api.themoviedb.org/3/movie/560?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
 
   constructor(
     private httpClient:HttpClient,
@@ -23,7 +23,7 @@ export class ServiceService {
     getMovie()
     {
      
-      return this.httpClient.get<Movies>(`${this.url}`,this.options)
+      return this.httpClient.get<Movies>(`${this.url}`)
     }
 
 }
