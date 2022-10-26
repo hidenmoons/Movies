@@ -8,12 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { TvshowsComponent } from './tvshows/tvshows.component';
 import { MenucardComponent } from './menucard/menucard.component';
+import { MenuCardsComponent } from './menu-cards/menu-cards.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TvshowsComponent,
-    MenucardComponent
+    MenucardComponent,
+   
+    MenuCardsComponent
   ],
   imports: [
     BrowserModule,
