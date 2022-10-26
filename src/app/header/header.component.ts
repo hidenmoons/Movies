@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatIconModule } from "@angular/material/icon";
+import { Movies } from '../Models/Movies.models';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +8,8 @@ import { MatIconModule } from "@angular/material/icon";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
+ @Input() movie: Movies|any;
 
   constructor() { }
 

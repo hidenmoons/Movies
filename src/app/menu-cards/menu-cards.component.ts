@@ -14,7 +14,7 @@ export class MenuCardsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 5; i++) {
       this._MovieServices.getMovie().
         subscribe((data) => {
 

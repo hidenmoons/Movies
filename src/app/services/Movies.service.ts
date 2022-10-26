@@ -14,7 +14,7 @@ export class ServiceService {
   };
 
  private apikey:string ="6bdDzgLqIsku9Jj7QwxCShk07EHe9jBUzGQD70JI";
- private  url: string = "https://api.themoviedb.org/3/movie/560?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
+ private  url: string = "https://api.themoviedb.org/3/movie/550?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
 
   constructor(
     private httpClient:HttpClient,
