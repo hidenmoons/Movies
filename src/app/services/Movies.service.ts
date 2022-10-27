@@ -13,17 +13,19 @@ export class ServiceService {
     }
   };
 
- private apikey:string ="6bdDzgLqIsku9Jj7QwxCShk07EHe9jBUzGQD70JI";
- private  url: string = "https://api.themoviedb.org/3/movie/550?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
-
+ private apikey:string ="?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
+ private i=549;
+ private  url: string = "https://api.themoviedb.org/3/movie/";
+ 
   constructor(
     private httpClient:HttpClient,
   ) { }
   
     getMovie()
     {
-     
-      return this.httpClient.get<Movies>(`${this.url}`)
+      this.i++;
+      return this.httpClient.get<Movies>(`${this.url}`+this.i+this.apikey)
+      
     }
 
 }
