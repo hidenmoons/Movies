@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ServiceService } from '../services/Movies.service';
 import { Movies } from '../Models/Movies.models';
 @Component({
@@ -8,7 +8,8 @@ import { Movies } from '../Models/Movies.models';
 })
 export class TvshowsComponent implements OnInit {
 
-  movies: Movies|any;
+  @Input() movies: Movies|any;
+  @Input() img: string|any;
   genres: Movies[] =[];
   constructor(
     private  _MovieServices: ServiceService

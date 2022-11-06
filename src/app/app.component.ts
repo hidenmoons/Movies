@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'peliculas';
+  img ="https://www.w3schools.com/howto/img_avatar.png";
 }

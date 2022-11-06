@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Movies } from '../Models/Movies.models';
 import { ServiceService } from '../services/Movies.service';
 
@@ -8,11 +8,12 @@ import { ServiceService } from '../services/Movies.service';
   styleUrls: ['./menu-cards.component.scss']
 })
 export class MenuCardsComponent implements OnInit {
-  @Input() movies: Movies[]=[];
+  @Output() movies: Movies[]=[];
   constructor(
     private _MovieServices: ServiceService
   ) { }
 
+  img ="https://www.w3schools.com/howto/img_avatar.png"
   ngOnInit(): void {
     for (let i = 549; i <= 555; i++) {
       this._MovieServices.getMovie(i).
