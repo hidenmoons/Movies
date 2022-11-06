@@ -14,8 +14,8 @@ export class MenuCardsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    for (let i = 1; i <= 5; i++) {
-      this._MovieServices.getMovie().
+    for (let i = 549; i <= 555; i++) {
+      this._MovieServices.getMovie(i).
         subscribe((data) => {
 
           this.movies.push(data)
@@ -23,7 +23,13 @@ export class MenuCardsComponent implements OnInit {
         })
 
     }
-    console.log(this.movies)
+   
+    console.log("🚀 ~ file: menu-cards.component.ts ~ line 22 ~ MenuCardsComponent ~ subscribe ~ this.movies.push(data)", this.movies)
+
   }
 
+  Idmovie()
+  {
+    
+  }
 }

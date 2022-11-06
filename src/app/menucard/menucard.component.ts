@@ -8,21 +8,19 @@ import { ServiceService } from '../services/Movies.service';
 })
 export class MenucardComponent implements OnInit {
 
-  @Input() movie: Movies|any;
+  @Input() movie: Movies | any;
   constructor(
-    private  MovieService: ServiceService
+    private _MovieServices: ServiceService
   ) { }
 
   ngOnInit(): void {
-    this.MovieService.getMovie().subscribe(data=>
-      {
-        this.movie = data
-        console.log(data);
-     }
-      )      
+   
   }
-  mouse()
-  {
+
+  mouse() {
     console.log('mouse');
+  }
+  Idmovie() {
+
   }
 }

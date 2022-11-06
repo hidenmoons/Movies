@@ -11,11 +11,11 @@ export class TvshowsComponent implements OnInit {
   movies: Movies|any;
   genres: Movies[] =[];
   constructor(
-    private  MovieService: ServiceService
+    private  _MovieServices: ServiceService
   ) { }
 
   ngOnInit(): void {
-    this.MovieService.getMovie().subscribe(data=>
+    this._MovieServices.getMovie(500).subscribe(data=>
       {
         this.movies = data
         
@@ -28,5 +28,8 @@ export class TvshowsComponent implements OnInit {
   ngOnDestroy(): void {
    
   }
-
+  Idmovie()
+  {
+   
+  }
 }

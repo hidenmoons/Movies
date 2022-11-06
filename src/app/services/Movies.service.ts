@@ -14,17 +14,17 @@ export class ServiceService {
   };
 
  private apikey:string ="?api_key=4d520adbec9ce27e3b4d7ca6ec6657b2";
- private i=549;
+
  private  url: string = "https://api.themoviedb.org/3/movie/";
  
   constructor(
     private httpClient:HttpClient,
   ) { }
   
-    getMovie()
+    getMovie(i: number)
     {
-      this.i++;
-      return this.httpClient.get<Movies>(`${this.url}`+this.i+this.apikey)
+      
+      return this.httpClient.get<Movies>(`${this.url}`+i+this.apikey)
       
     }
 
