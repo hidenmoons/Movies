@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Movies } from '../Models/Movies.models';
 import { ServiceService } from '../services/Movies.service';
 
@@ -8,7 +8,7 @@ import { ServiceService } from '../services/Movies.service';
   styleUrls: ['./menu-cards.component.scss']
 })
 export class MenuCardsComponent implements OnInit {
-  movies: Movies[]=[];
+  @Input() movies: Movies[]=[];
   constructor(
     private _MovieServices: ServiceService
   ) { }

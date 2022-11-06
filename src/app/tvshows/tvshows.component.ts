@@ -15,14 +15,7 @@ export class TvshowsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._MovieServices.getMovie(500).subscribe(data=>
-      {
-        this.movies = data
-        
-        console.log("data",data, "generos:",this.genres);
-        
-     }
-      )      
+      
   }
 
   ngOnDestroy(): void {
