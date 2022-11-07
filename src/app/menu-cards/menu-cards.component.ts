@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Movies } from '../Models/Movies.models';
 import { ServiceService } from '../services/Movies.service';
 
